@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TERCERA APLICACION</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/AN.jpg','imagenes/ACTN.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1> <b>EL VOLCAN POPOCATEPETL </b></h1>
+   </div>
+   <div data-role="main" class="ui-content">
+  </div>
+   <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> UBICACION DEL VOLCAN </h2>
+   <p> Muestra su uvicacion </p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> TAMAÑO </h2>
+   <p>Nos permite conocer su tamaño  </p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> ANTIGUEDAD </h2>
+   <p> muestra cual es su antiguedad  </p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> SU LEYENDA  </h2>
+   <p> la leyenda de los volcanes el popocatepetl y el iztazihuatl </p>
+   </a>
+   </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> ACTIVIDAD VOLCANICA </h2>
+     <p>Muestra la actividad volcanica</p>
+     </a>   
+   </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> MONITOREO </h2>
+     <p>Muestra su monitoreo </p>
+     </a>   
+   </li> 
+      <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> MEDIDAS PREVENTIVAS EN CASO DE CAIDA DE CENIZA Y ERUPCION </h2>
+     <p>Muestra que medidas son la que podemos tomar en caso de caida de ceniza o una erupcion volcanica</p>
+     </a>   
+   </li>   
+      <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> ZONAS DE RIESGO </h2>
+     <p>Muestra cuale son sus zonas de riesgo </p>
+     </a>   
+   </li>     
+   </ul>
+  </div>
+<div data-role="footer" align="center" data-theme="b">
+   <div>
+   
+   </div>
+    <div>
+    <h4>Aplicacion TRES</h4>
+    <img src="imagenes/volcan.jpg" width="46" height="46">
+    <h4> PAMELA DEGANTE CRUZ</h4>
+    </div>
+    </div>
+    </div>
+    
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1>UBICACION</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <div data-role="collapsible" data-content-theme="false"> 
+       <h2> imagen</h2>
+       <img src="imagenes/ubicacion.jpg" width="50%" height="50%">
+       </div>
+       <p> El Popocatépetl (en náhuatl: popocatepetl, el cerro que humea’‘popoca, humear; tepetl, cerro’) es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.3.</p>
+       
+        <img src="imagenes/volcan1.jpg" width="50%" height="50%">
+       <p> Su nombre, proveniente de la lengua náhuatl, compuesto por Popōca «que humea» y tepētl «montaña», en conjunto significa «montaña que humea», debido a su ya constante actividad desde la época prehispánica.</p> 
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/ACTN.jpg',1)"><img src="imagenes/A.jpg" width="353" height="334" id="Image24"></a> 
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+     </div>
+     </div>
+     
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> TAMAÑO </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <img src="imagenes/A.jpg" width="50%" height="50%">
+       <P> Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</P>
+<img src="imagenes/tam.jpg" width="50%" height="50%">
+<P>  El Popocatépetl es la segunda altura de la República Mexicana cointando con 5,452 m </P>
+       </div>
+        </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> ANTIGUEDAD </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p> El primer ascenso registrado a este volcán fue hecho mucho antes de la época del Imperio mexica en 1289, por los Tecuanipas; el segundo ascenso hecho por los españoles fue dirigido por Diego de Ordás en 1519, para conseguir azufre para su pólvora. <p>
+       <img src="imagenes/ANT.jpg" width="50%" height="50%">
+      
+       <p>El Popocatépetl ha sido uno de los volcanes más activos de México. Desde 1354 se han registrado 18 erupciones. En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad. Después, el 21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes a más de 25 km de distancia. Actualmente su actividad es moderada, pero constante, con emisión de fumarolas, compuestas de gases y vapor de agua, y repentinas e imprevistas expulsiones menores de ceniza y material volcánico.  </p>
+       
+     <div data-role="collapsible" data-content-theme="false"> 
+     <h2> imagen </h2>
+       <img src="imagenes/GUY.jpg" width="50%" height="50%">
+       </div>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+       </div>
+       
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> SU LEYENDA  </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div> 
+        <h2>LA LEYENDA DE LOS VOLCANES </h2>
+       <img src="imagenes/LEYBH.jpg" width="50%" height="50%">
+       <P>    </P>
+                
+       
+        <img src="imagenes/GOYO.jpg" width="50%" height="50%">
+       <P>  Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+
+</P>
+      <img src="imagenes/LEYBHJB.jpg" width="50%" height="50%">
+      
+       <P> Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.
+
+ 
+Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.</P>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/AN.jpg',1)"><img src="imagenes/volcan2.jpg" width="308" height="163" id="Image23"></a>
+       
+<p> La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas. </P>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:600px;height:165px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->     
+       
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+       </div>
+       
+          <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> ACTIVIDAD VOLCANICA </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <img src="imagenes/MEDP.jpg" width="50%" height="50%"> 
+       <p>La actividad del volcán ha sido relativamente baja en los últimos días, después de la serie de fuertes explosiones a principios de abril había destruido el domo de lava anterior. CENAPRED informó 74 emisiones débiles y una explosión durante las últimas 24 horas. </p>
+       <img src="imagenes/erupcion.jpg" width="50%" height="50%"> 
+       <p> Cambios significativos en la actividad no han ocurrido en el volcán recientemente a pesar de una serie de explosiones más fuertes en los últimos días. Una explosión el martes por la tarde generó una nube de ceniza que se elevó hasta 3,5 km y otro que se durante la noche siguiente fue visto expulsando abundante material incandescente fuera el cráter de cumbre. </p>
+       <img src="imagenes/MP.jpg" width="50%" height="50%"> 
+       <img src="imagenes/MON.jpg" width="50%" height="50%"> 
+       <p>No hay cambios significativos han ocurrido en las últimas semanas en el volcán. Lava lentamente subiendo y creciendo una bóveda plana en el cráter de Cumbre interior. Gases atrapados, a presión causan pequeñas a moderadas explosiones de vez en cuando, típicamente unos pocos al día. </p>
+       
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+       </div>
+      
+        <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> MONITOREO </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+        <img src="imagenes/ACt.jpg" width="50%" height="50%">
+       <P> La información publicada en esta sección es el resultado del monitoreo del volcán Popocatépetl que se realiza conjuntamente con la Universidad Nacional Autónoma de México. </P>
+    <a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/"> dar click aqui para mayor informacion </a>
+    <br>
+    
+       <img src="imagenes/reventador1.jpg" width="50%" height="50%">
+       <P>México se encuentra situado en una región con importante actividad volcánica. De los 3,000 volcanes que aproximadamente tiene el país, 14 son considerados activos. El país ha vivido actividades recientes de volcanes que han presentado fases eruptivas importantes, algunas con consecuencias desastrosas, ejemplo de ello son el Paricutín, en Michoacán, que hizo erupción en 1943, el Chichón, en Chiapas, en 1982; el Tacaná, en Chiapas, en 1986 y el volcán de Colima, el cual ha tenido episodios de gran actividad en los últimos años </P>
+        <img src="imagenes/6_volcan.jpg" width="50%" height="50%">
+       <P> El Popocatépetl, es un estratovolcán andesítico-dacítico, localizado a 60 km al sureste de la Ciudad de México y a 45 km al oeste de la Ciudad de Puebla. Tiene una altura de 5452 msnm y un cráter de 900 m de diámetro y aprox. 200 m de profundidad. Su edificio cubre un área de 500 km2 abarcando los estados de Puebla, México y Morelos. </P>
+       <img src="imagenes/volcan_act.jpg" width="50%" height="50%">
+       <P> uatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. </p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion TRES, DCP </h4>
+       </div>
+       </div>
+     
+       
+        <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1> MEDIDAS PREVENTIVAS en caso de ceniza o erupcion volcanica </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       
+       <img src="imagenes/1.jpg" width="50%" height="50%">
+       
+       <p>--Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.<br>
+--Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.<br>
+--Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.<br>
+--Evita zonas de ríos y regiones bajas.<br>
+--Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.<br>
+        <img src="imagenes/volcan1.jpg" width="50%" height="50%">
+       <p> --Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.<br>
+--Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. <br>
+--Durante la limpieza, lleva elementos de protección<br>
+--La ceniza puede dañar motores y piezas metálicas, así que evita conducir.<br>
+-- Si debes conducir, no superes los 55 kilómetros por hora.</p> 
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion tres, DCP </h4>
+       </div>
+     </div>
+     </div>
+      <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1> ZONAS DE RIESGO</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       
+       <img src="imagenes/mapa_volcanes.jpg" width="50%" height="50%">
+       
+       <p> las zonas de mayor riesgo en caso de una erupcion volcanica son los estados de oaxaca, tlaxcala, puebla, y el estadoi de mexico</p>
+        <img src="imagenes/popo.jpg" width="50%" height="50%">
+       <p> En caso de una erupción del Popocatépetl, los tres posibles tipos de peligro serian: Flujos calientes de material volcánico: viajan a alta velocidad, sólo en algunos minutos descienden del volcán y destruyen todo a su paso. Flujos de lodo e inundaciones: se concentran esencialmente en las barrancas y en los arroyos y les toma de 10 a 30 minutos descender del volcán. Caída o lluvia de material volcánico: es peligrosa especialmente si el peso del deposito excede la resistencia de los techos de las casas, ya que ello puede ocasionar que se colapsen. En algunos casos, la acumulación de más de 10 centímetros de material puede producir el derrumbe del techo, sobre todo si el material se encuentra húmedo. </p> 
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a">
+       <h4>Aplicacion Dos, TRES </h4>
+       </div>
+     </div>
+       
+       
+</body>
+</html>
